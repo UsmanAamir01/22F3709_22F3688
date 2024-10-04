@@ -15,6 +15,10 @@ public class Library {
 		System.out.println("Books in library: " + books);
 	}
 
+	public boolean searchBook(String bookName) {
+		return books.contains(bookName);
+	}
+
 	public static class Main {
 		public static void main(String[] args) {
 			Library myLibrary = new Library();
