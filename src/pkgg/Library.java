@@ -16,10 +16,11 @@ public class Library {
 		if (books.isEmpty()) {
 			System.out.println("No books available in the library to remove.");
 		} else if (books.remove(bookName)) {
-		if (books.remove(bookName)) {
-			System.out.println(bookName + " removed from library.");
-		} else {
-			System.out.println(bookName + " not found in library.");
+			if (books.remove(bookName)) {
+				System.out.println(bookName + " removed from library.");
+			} else {
+				System.out.println(bookName + " not found in library.");
+			}
 		}
 	}
 
